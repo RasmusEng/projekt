@@ -1,0 +1,16 @@
+Hemsida:
+Ämne: Rymden
+Namn: Solsystemet
+Målgrupp: åk4-9 och folk som är nyintreserade
+
+Insperation:
+https://www.apple.com/se/
+https://www.blizzard.com/en-us/?ref=battle.net
+https://www.nasa.gov/
+
+Funktioner:
+Jag har tänkt mig en huvudsida som är lite snabb fakta om vårat Solsystemet sedan tänkte jag ha en lista till ovanför där du kan värlja solen eller vilken planet du vill läsa mer om. På mindre skärmar som telefoner ska listan komma ut från vänster vid ett knapptryck kunna åka in och ut så att den inte är ivägen när du vill läsa. Namnet högst upp i titeln kommer också ändras beroende på vilken planet du är inne på, loggan kommer också förendras beronede på vilken av planeterna du är inne på.
+
+Tema:
+Jag ska ha ett ganska simpelt tema som nästan ser tecknat ut eftesom jag tror att det kan vara lite lättare för min målgrupp att förstå de olika delar som visas. Det är förmodligen också mer likt vad de yngre kollar är vana med när de kollar på underhållningm, vilket kan göra det lite mer intressant. Grå möjligtvis en rymdvy som bakgrund, texten ska för det mästa vara vit med grå bakgrund för att det ska vara lättare att läsa.
+
