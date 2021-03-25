@@ -1,5 +1,49 @@
 :root {
     --color1: white;
     --color2:slategray;
-    --color3:
+    --color3:darkgrey;
+}
+
+body{
+    background-color: var(--color2);
+    color: var(--color1);
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-rows: 100px auto 300px auto;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas: 
+    '. n n n n n n n n .'
+    '. h h h h h h h h .'
+    '. b b t t t t t t .'
+    '. l l l l l l l l .'
+    ;
+}
+
+.namn{
+    grid-area: n;
+}
+
+.valkatalog{
+    grid-area: h;
+    background-color: var(--color3);
+}
+
+.planet{
+
+}
+
+.bild{
+    grid-area: b;
+}
+
+.introduktion{
+    grid-area: t;
+}
+
+.brödtext{
+    grid-area: l;
 }
