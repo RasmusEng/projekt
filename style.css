@@ -1,15 +1,18 @@
+/*-------Variabler-------*/
 :root {
     --color1: white;
-    --color2:slategray;
+    --color2:black;
     --color3:darkgrey;
 }
-
+/*-------Grundformatiering-------*/
 body{
-    margin-left: 16rem;
-    margin-right:16rem;
+    margin-left: 10rem;
+    margin-right:10rem;
     margin-top: 0;
     padding: 0;
     background-color: var(--color2);
+
+    background-image: url(bilder/bakgrund.jpg);
 }
 
 .hela{
@@ -22,58 +25,70 @@ body{
     padding-bottom: 2rem;
 
     display: grid;
-    grid-template-rows: 100px auto 300px 600px;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 100px auto auto auto;
+    grid-template-columns: 1fr auto;
     grid-template-areas: 
-    'n n n n n n n n'
-    'h h h h h h h h'
-    'b b t t t t in in'
-    'l l l l l l in in'
+    'header header'
+    'nav nav'
+    'allt lista'
+    'footer footer'
     ;
 }
-
+/*-------Header-------*/
 .namn{
-    grid-area: n;
+    grid-area: header;
 }
 
-.toppen{
-    background-image: url(bilder/bakgrund.jpg);
-}
 
+/*-------Nav-------*/
 .valkatalog{
-    grid-area: h;
-
-
+    grid-area: nav;
 
     display: flex;
     justify-content: space-between;
 }
 
 .planet{
-    font-size: 1.5rem;
-    
     text-decoration: none;
     color: var(--color3);
-
+    font-size: 1.5rem;
 }
 
-.bild{
-    grid-area: b;
 
+.inforuta{
+    grid-area: lista;
+}
+
+/*-------Grundformatiering text-------*/
+.storainfo{
+    grid-area: allt;
+    
+    display: grid;
+    grid-template-areas: 
+    'bild introduktion'
+    'texta texta'
+    'texta texta'
+    ;
+    grid-template-columns:repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+
+}
+.bild{
+    grid-area: bild;
+
+    margin: 0;
+    padding: 0;
 }
 
 .introduktion{
-    grid-area: t;
-
-    padding-top: 2rem;
+    grid-area: introduktion;
 }
 
-.brödtext{
-    grid-area: l;
-
+.text{
+    grid-area: texta;
 }
 
-.inforuta{
-    grid-area: in;
-
+/*-------Footer-------*/
+.footer{
+    grid-area: footer;
 }
