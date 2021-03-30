@@ -6,8 +6,8 @@
 }
 /*-------Grundformatiering-------*/
 body{
-    margin-left: 10§rem;
-    margin-right:10rem;
+    margin-left: 7rem;
+    margin-right:7rem;
     margin-top: 0;
     padding: 0;
     background-color: var(--color2);
@@ -25,14 +25,16 @@ body{
     padding-bottom: 2rem;
 
     display: grid;
-    grid-template-rows: 100px auto auto auto;
-    grid-template-columns: 1fr auto;
+    grid-template-rows: 6,25rem auto 1fr auto;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
     'header header'
     'nav nav'
-    'allt lista'
+    'allt allt'
     'footer footer'
     ;
+    
+    border:1px solid white ;
 }
 /*-------Header-------*/
 .namn{
@@ -46,18 +48,23 @@ body{
 
     display: flex;
     justify-content: space-between;
-}
+
+    border:1px solid white ;
+
+    padding: 1rem;
+
+    background-image: url(/bilder/bakgrund.jpg);
+    }
 
 .planet{
     text-decoration: none;
     color: var(--color3);
     font-size: 1.5rem;
+
 }
 
 
-.inforuta{
-    grid-area: lista;
-}
+
 
 /*-------Grundformatiering text-------*/
 .storainfo{
@@ -65,30 +72,55 @@ body{
     
     display: grid;
     grid-template-areas: 
-    'bild introduktion'
-    'texta texta'
-    'texta texta'
+    'bild introduktion lista'
+    'texta texta lista'
+    'texta texta .'
     ;
-    grid-template-columns:repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns:auto 1fr 6rem;
+    grid-template-rows: repeat(3, 1fr);
 
+    
+    border:1px solid white ;
 }
+
 .bild{
     grid-area: bild;
-
-    margin: 0;
-    padding: 0;
+    
+    border:1px solid white ;
 }
 
 .introduktion{
     grid-area: introduktion;
+
+    font-weight: bold;    
+    border:1px solid white ;
 }
 
 .text{
     grid-area: texta;
+
+
+    border:1px solid white ;
 }
 
+.inforuta{
+    grid-area: lista;
+
+    padding: 0;
+
+    
+    border:1px solid white ;
+}
+
+.lista{
+
+    list-style-type: none;
+
+}
 /*-------Footer-------*/
 .footer{
     grid-area: footer;
+
+    
+    border:1px solid white ;
 }
