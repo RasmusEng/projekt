@@ -136,6 +136,11 @@ body{
 
 
 @media all and (max-width: 800px){
+
+    body{
+        margin-left: 60px;
+        margin-right: 60px;
+    }
     
 .hela{
     color: var(--color1);
@@ -197,12 +202,13 @@ body{
     
     display: grid;
     grid-template-areas: 
-    'bild introduktion lista'
-    'texta texta lista'
-    'texta texta .'
+    'bild lista'
+    'introduktion introduktion'
+    'texta texta'
+    'footer footer'
     ;
-    grid-template-columns:auto 1fr 20rem;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns:auto 1fr;
+    grid-template-rows: 15rem 400px 1fr;
 
     
     border:1px solid white ;
