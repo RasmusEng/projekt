@@ -3,7 +3,7 @@
     --color1: white;
     --color2:black;
     --color3:darkgrey;
-    --color4: #2b56ab;
+    --color4: rgb(70, 108, 111);
 }
 /*-------Grundformatiering-------*/
 body{
@@ -176,7 +176,7 @@ body{
 }
 
 .valkatalog span{
-    background-color: royalblue;
+    background-color: var(--color4);
     color: white;
     display: block;
     height: 50px;
@@ -208,7 +208,7 @@ body{
     'footer footer'
     ;
     grid-template-columns:auto 1fr;
-    grid-template-rows: 15rem 400px 1fr;
+    grid-template-rows: 15rem 400px 1fr auto;
 
     
     border:1px solid white ;
