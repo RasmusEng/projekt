@@ -14,3 +14,18 @@ document.addEventListener('keydown', function(event){
         nav.classList.toggle('open')
     }
 })
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.namn__rubrik .letter',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.namn__rubrik',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
