@@ -1,7 +1,10 @@
 2021-03-22:
-
+Planerat vad jag vill ha på min sida och hur sida ska ungefär se ut. Jag har också tagit Insperation från olika sidor och 
 
 2021-03-30:
 Jobbar på att få in inforuta i storainfo för att få lite mer plats till vänster
 för andra saker som snabb hopp och mera.
+
+2021-04-01:
+Börjar att anpassa sidan till olika skärmupplösningar, då sidan ska se bra ut på både telefoner, surfplattor och datorer
 
