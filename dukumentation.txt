@@ -8,3 +8,9 @@ för andra saker som snabb hopp och mera.
 2021-04-01:
 Börjar att anpassa sidan till olika skärmupplösningar, då sidan ska se bra ut på både telefoner, surfplattor och datorer
 
+2021-04-12:
+Ny layout, har valkatalogen i headern istället för att ha den under. Seadan är det en ny bakgrund som inte är helt svart utan har itte färg. 
+Fixat lite res problem, liveesrver/google chrome bugg. 
+
+2121-04-13:
+Planer på att fixa google fonts, börja täka på en layout till de enskilda planterna(sidorna), bilgalleri.
