@@ -16,8 +16,9 @@ body{
     '. hela .';
     grid-template-columns: 40rem 1fr 40rem;
     
-    background-color: var(--color2);
+    background-image: linear-gradient(#021F4B, #4C3B71, #115258);
     
+    height: 100vh;
     background-size: cover;
 }
 
@@ -152,6 +153,11 @@ body{
     border:1px solid white ;
 }
 
+.github{
+    text-decoration: none;
+    color: ;
+}
+
 @media all and (max-width: 2600px){
 body{
     grid-template-columns: 10rem 1fr 10rem;
@@ -200,8 +206,8 @@ body{
         grid-template-columns: 0rem 1fr 0rem;
     }
 }
-@media all and (max-width: 1050px){
 
+@media all and (max-width: 1050px){
     body{
         display: flex;
         justify-content: center;
