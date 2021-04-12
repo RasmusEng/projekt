@@ -15,3 +15,23 @@ Fixat lite res problem, liveesrver/google chrome bugg.
 Planer på att fixa google fonts, börja täka på en layout till de enskilda planterna(sidorna), bilgalleri.
 
 Fixat en animerad meny ikon, google fonts på hela texten. funderat på bildgalleri.
+
+
+Planer:
+Kolla på alternativa layouts för de olika planterna
+
+Hem knapp
+
+bildgalleri, med olika kategorier beroende på vart bilderna är tagna, java-script som vi använde tidigare
+
+fav ikon, på alla planeter
+
+Färger till alla planeter
+
+Pop animmation på valkatalogen när du håller musen över den.
+
+footern 
+
+slidern
+
+skriva texten och länka till källor
