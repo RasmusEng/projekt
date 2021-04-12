@@ -12,5 +12,6 @@ Börjar att anpassa sidan till olika skärmupplösningar, då sidan ska se bra u
 Ny layout, har valkatalogen i headern istället för att ha den under. Seadan är det en ny bakgrund som inte är helt svart utan har itte färg. 
 Fixat lite res problem, liveesrver/google chrome bugg. 
 
-2121-04-13:
 Planer på att fixa google fonts, börja täka på en layout till de enskilda planterna(sidorna), bilgalleri.
+
+Fixat en animerad meny ikon, google fonts på hela texten. funderat på bildgalleri.
