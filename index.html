@@ -12,7 +12,12 @@
     <div class="hela">
         <h1 class="namn namn__rubrik">Solsystemet</h1>
         <nav class="valkatalog" id="nav">
-            <span class="knapp" id="x"></span>
+            <div class="container" onclick="myFunction(this)" id="x">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <!--<span class="knapp" id="x"></span>-->
             <a class="planet planet__merkurius" href="planeter/merkurius.html">Merkurius</a>
             <a class="planet planet__venus" href="planeter/venus.html">Venus</a>
             <a class="planet planet__jorden" href="planeter/jorden.html">Jorden</a>
@@ -46,5 +51,6 @@
         </footer>
     </div>
     <script src="app.js"></script>
+    <script src="knapp.js"></script>
 </body>
 </html>
