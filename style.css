@@ -42,6 +42,7 @@ body{
 
     border:1px solid white ;
 }
+
 /*-------Header-------*/
 .namn{
     grid-area: header;
@@ -305,12 +306,6 @@ body{
     border:1px solid white ;
 }
 
-.inforuta{
-
-}
-
-}
-
 @media all and (max-width: 600px){
     body{
         margin-right: 10px;
@@ -333,5 +328,4 @@ body{
         grid-template-columns:auto 1fr;
         grid-template-rows: 15rem 400px 1fr auto;
     }
-
 }
