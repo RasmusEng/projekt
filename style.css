@@ -6,10 +6,7 @@
     --color4: rgb(93, 127, 185);
 }
 
-
-
 /*-------Grundformatiering-------*/
-
 body{
     margin: 0;
     padding: 0;
@@ -21,12 +18,14 @@ body{
     
     background-image: linear-gradient(black, #021F4B, #4C3B71, #115258);
     background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    overflow-x: hidden;
 }
 
-.hela{
+.main{
     grid-area: hela;
     color: var(--color1);
-    font-family: 'Space Grotesk', sans-serif;
 
     margin: 0;
     padding: 0;
@@ -153,16 +152,18 @@ body{
 /*-------Footer-------*/
 .footer{
     grid-area: footer;
-
+    
     font-size: 1.25rem;
 
-    border:1px solid white ;
+    border:1px solid white;
 }
 
-.github{
+.footer a{
+    font-weight: bold;
     text-decoration: none;
     color: var(--color1);
 }
+
 
 @media all and (max-width: 2600px){
 body{
@@ -219,7 +220,7 @@ body{
 @media all and (max-width: 1400px){
 
 
-.hela{
+.main{
     color: var(--color1);
     font-family: Arial, Helvetica, sans-serif;
 
