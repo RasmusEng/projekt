@@ -50,6 +50,9 @@ body{
     display: flex;
     align-items: center;
 
+    font-family: 'Orelega One', cursive;
+    letter-spacing: 1px;
+
     font-size: 3rem;
 }
 
@@ -85,6 +88,11 @@ body{
     /*border:1px solid white;*/
 
     font-size: 2.5rem;
+}
+
+.planet:hover{
+    font-size: 2.6rem;
+    transition: 0.3s;
 }
 
 /*-------Grundformatiering text-------*/
