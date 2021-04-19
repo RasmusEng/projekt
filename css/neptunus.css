@@ -16,7 +16,7 @@ body{
     '. hela .';
     grid-template-columns: 15rem 1fr 15rem;
     
-    background-image: linear-gradient(royalblue, skyblue, gold, orange);
+    background-image: linear-gradient(black, #021F4B, #4C3B71, #115258);
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
     
@@ -88,6 +88,11 @@ body{
     /*border:1px solid white;*/
 
     font-size: 2.5rem;
+}
+
+.planet:hover{
+    font-size: 2.6rem;
+    transition: 0.3s;
 }
 
 /*-------Grundformatiering text-------*/
@@ -275,19 +280,17 @@ body{
     transition: 0.4s;
 }
 
-/*Animation för knappen*/
-/* Roterar bar1 */
+  /* Rotate first bar */
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
     transform: rotate(-45deg) translate(-9px, 6px) ;
 }
 
-/* Tar bort bar2 */
+/* Fade out the second bar */
 .change .bar2 {
     opacity: 0;
 }
-
-/*Roterar bar3*/
+  /* Rotate last bar */
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
@@ -312,25 +315,25 @@ body{
 }
 
 @media all and (max-width: 600px){
-body{
-    margin-right: 10px;
-    margin-left: 10px;
-}
+    body{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
 
-.valkatalog{
-    padding: 1rem;
-}
+    .valkatalog{
+        padding: 1rem;
+    }
+    .content{
 
-.content{
-    display: grid;
-    grid-template-areas: 
-    'bild'
-    'lista'
-    'introduktion'
-    'texta'
-    'footer'
-    ;
-    grid-template-columns:auto 1fr;
-    grid-template-rows: 15rem 400px 1fr auto;
-}
+        display: grid;
+        grid-template-areas: 
+        'bild'
+        'lista'
+        'introduktion'
+        'texta'
+        'footer'
+        ;
+        grid-template-columns:auto 1fr;
+        grid-template-rows: 15rem 400px 1fr auto;
+    }
 }
