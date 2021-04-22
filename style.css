@@ -4,8 +4,16 @@
     --color2:black;
     --color3:rgb(168, 168, 168);
     --color4: rgb(93, 127, 185);
+    --solen: #FC9601;
+    --merkurius: #B5A7A7;
+    --venus: #8B91A1;
+    --jorden: #3C4258;
+    --mars: #663926;
+    --jupiter: #C88B3A;
+    --saturnus: #C3A171;
+    --uranus: #65868B;
+    --neptunus: #6081FF;
 }
-
 /*-------Grundformatiering-------*/
 body{
     margin: 0;
@@ -40,6 +48,10 @@ body{
     ;
     max-width: 3300px;
 
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 2rem;
+
+    border-radius: 2rem;
     border:1px solid white ;
 }
 
@@ -47,6 +59,7 @@ body{
 .namn{
     grid-area: header;
 
+    color: var(--solen);
     display: flex;
     align-items: center;
 
@@ -64,13 +77,9 @@ body{
     justify-content: space-between;
     align-items: center;
 
-
-
     box-sizing: border-box;
 
     padding: 1rem;    
-    
-    /*border:1px solid white ;*/
 }
 
 .knapp{
@@ -85,14 +94,12 @@ body{
     font-size: .5rem;
     font-weight: bold;
 
-    /*border:1px solid white;*/
-
     font-size: 2.5rem;
 }
 
 .planet:hover{
-    font-size: 2.6rem;
-    transition: 0.3s;
+    font-size: 2rem;
+    transition: 0.5s;
 }
 
 /*-------Grundformatiering text-------*/
@@ -260,6 +267,7 @@ body{
 
     display: grid;
 }
+
 .toggle {
     color: white;
     display: inline-block;
@@ -280,7 +288,7 @@ body{
     transition: 0.4s;
 }
 
-  /* Rotate first bar */
+/* Rotate first bar */
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
     transform: rotate(-45deg) translate(-9px, 6px) ;
@@ -290,7 +298,8 @@ body{
 .change .bar2 {
     opacity: 0;
 }
-  /* Rotate last bar */
+
+/* Rotate last bar */
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;

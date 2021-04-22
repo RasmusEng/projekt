@@ -20,6 +20,8 @@ Fixat en animerad meny ikon, google fonts på hela texten. funderat på bildgall
 Gjort färger och fixat allt fram till saturnus
 börjat på video galleri
 
+2021-04-15:
+Lite fixande, tänkt om med färger och bakgrund.
 
 Planer:
 
