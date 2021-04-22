@@ -27,10 +27,6 @@ Planer:
 
 bildgalleri, med olika kategorier beroende på vart bilderna är tagna, java-script som vi använde tidigare
 
-fav ikon, på alla planeter
-
-Färger till alla planeter
-
 footern 
 
 slidern
