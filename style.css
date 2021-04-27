@@ -1,369 +1,103 @@
-/*-------Variabler-------*/
-:root {
-    --color1: white;
-    --color2:black;
-    --color3:rgb(168, 168, 168);
-    --color4: rgb(93, 127, 185);
-    --solen: #FC9601;
-    --merkurius: #B5A7A7;
-    --venus: #8B91A1;
-    --jorden: #3C4258;
-    --mars: #663926;
-    --jupiter: #C88B3A;
-    --saturnus: #C3A171;
-    --uranus: #65868B;
-    --neptunus: #6081FF;
+:root{
+
 }
-/*-------Grundformatiering-------*/
+
 body{
     margin: 0;
     padding: 0;
-
-    display: grid;
-    grid-template-areas:
-    '. hela .';
-    grid-template-columns: 15rem 1fr 15rem;
-    grid-template-rows: auto;
-    
-    background: url(/bilder/963345.jpg) no-repeat center center fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-
-    font-family: Arial, Helvetica, sans-serif;
-    
-    overflow-x: hidden;
 }
 
-.main{
-    grid-area: hela;
-    color: var(--color1);
-
-    margin-top: 150px;
-    padding: 0;
-
-    display: grid;
-    grid-template-rows: 1fr auto;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    'allt'
-    'footer'
-    ;
-    max-width: 3300px;
-
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 2rem;
-
-    border-radius: 2rem;
-    border:1px solid white ;
-}
-
-/*-------Header-------*/
-.header{
-    grid-area: header;
-    
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 100px;
-    grid-template-areas: 
-    'namn nav';
-    background-color: var(--jorden);
-
-    position:fixed;
+header{
     width: 100%;
+    height: 70px;
+    background-color: black;
 }
 
-.namn{
-    grid-area: namn;
-
-    color: var(--solen);
-    display: flex;
-    align-items: center;
-
-    font-family: 'Orelega One', cursive;
-    letter-spacing: 1px;
-
-    font-size: 3rem;
-
-    outline: 3px solid green;
+.rubrik{
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
 }
 
-/*-------Nav-------*/
-.valkatalog{
-    grid-area: nav;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    box-sizing: border-box;
-
-    padding: 1rem;   
-    
-    border: 1px solid white;
-}
-
-.knapp{
+.toggle{
     display: none;
-
     width: 0;
 }
 
-.planet{
-    text-decoration: none;
-    color: var(--color1);
-    font-size: .5rem;
-    font-weight: bold;
-
-    font-size: 2.5rem;
+.links{
+    width: auto;
+    float: right;
+    margin-top: 5px;
+    font-size: 20px;
 }
 
-.planet:hover{
-    font-size: 2rem;
-    transition: 0.5s ease-in-out;
-}
-
-/*-------Grundformatiering text-------*/
-.content{
-    grid-area: allt;
-    
-    display: grid;
-    grid-template-areas: 
-    'bild introduktion lista'
-    'texta texta lista'
-    'texta texta .'
-    ;
-    grid-template-columns:auto 1fr auto;
-    grid-template-rows: repeat(3, 1fr);
-
-    
-    border:1px solid white ;
-}
-
-.bild{
-    grid-area: bild;
-    
-    border:1px solid white ;
-}
-
-.introduktion{
-    grid-area: introduktion;
-
-    font-weight: bold;    
-    border:1px solid white ;
-
-    font-size: 1.875rem;
-}
-
-.textstycke{
-    grid-area: texta;
-
-    font-size: 1.56rem;
-    row-gap: 0.19rem;
-
-    border:1px solid white ;
-}
-
-/*-------Inforuta-------*/
-.inforuta{
-    grid-area: lista;
-
-    padding: 0;
-
-    border:1px solid white ;
-}
-
-.inforubrik{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 1rem;
-    border-bottom:1px solid white ;
-
-    font-size: 2.8rem;
-}
-
-.lista{
-    list-style-type: none;
-
-}
-/*-------Footer-------*/
-.footer{
-    grid-area: footer;
-    
-    font-size: 1.25rem;
-
-    border:1px solid white;
-}
-
-.footer a{
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--color1);
-}
-
-
-@media all and (max-width: 2600px){
-body{
-    grid-template-columns: 10rem 1fr 10rem;
-}
-
-.namn{
-    font-size: 2.7rem;
+.planetlist{
+    display: inline-block;
+    padding: 15px 30px;
 }
 
 .planet{
-    font-size: 1.7rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
 }
-
-.content{
-    grid-template-columns:auto 1fr auto;
-}
-
-.inforubrik{
-    font-size: 1.875rem;
-}
-
-.introduktion{
-    font-size: 1.625rem;
-}
-
-.textstycke{
-    font-size: 1.01rem;
-}
-
-.footer{
-    font-size: 0.875rem;
-}
-}
-@media all and (max-width: 1950px){
-    body{
-        grid-template-columns: 10rem 1fr 10rem;
-    }
-
-    .content{
-        grid-template-columns:auto 1fr auto;
-    }
-}
-
-@media all and (max-width: 1600px){
-    body{
-        grid-template-columns: 0rem 1fr 0rem;
-    }
-    .planet{
-        font-size: 1.4rem;
-    }
-}
-
-@media all and (max-width: 1400px){
-
 
 .main{
-    color: var(--color1);
-    font-family: Arial, Helvetica, sans-serif;
-
-    margin: 0;
-    padding: 0;
-
+    width: 100%;
     display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr;
     grid-template-areas: 
-    'header'
-    'allt'
-    'footer'
+    'contents inforuta'
+    'footer footer'
     ;
-    border:1px solid white ;
-}
-
-.valkatalog{
-    background-color: var(--color2);
-    width: 300px;
-    height: 100vh;
-    position: relative;
-
-    position: fixed;
-    right: -300px;
-    top: 0;
-    transition: .3s ease-in-out;
-
-    display: grid;
-}
-
-.toggle {
-    color: white;
-    display: inline-block;
-    cursor: pointer;
-    
-    position: absolute;
-    top: 30px;
-    /*left: -35px;*/
-    right: 100%;
-    margin-right: 5px;
-
-}
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s ease-in-out;
-}
-
-/* Rotate first bar */
-.change .bar1 {
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-/* Fade out the second bar */
-.change .bar2 {
-    opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-    transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
-}
-
-.open{
-    right: 0;
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 1fr 400px;
 }
 
 .content{
-    display: grid;
+    grid-area: contents;
+
     grid-template-areas: 
-    'bild lista'
-    'introduktion introduktion'
-    'texta texta'
-    'footer footer'
+    'intro'
+    'rubrik1'
+    'text1'
+    'rubrik2'
+    'text2'
     ;
-    grid-template-columns:auto 1fr;
-    grid-template-rows: 1fr 400px 1fr auto;
-    
-    border:1px solid white ;
 }
 
-@media all and (max-width: 600px){
-    body{
-        margin-right: 10px;
-        margin-left: 10px;
-    }
+.introduktion{
+    grid-area: intro;
+}
 
-    .valkatalog{
-        padding: 1rem;
-    }
-    .content{
+.rubrik{
+    color: black;
+}
 
-        display: grid;
-        grid-template-areas: 
-        'bild'
-        'lista'
-        'introduktion'
-        'texta'
-        'footer'
-        ;
-        grid-template-columns:auto 1fr;
-        grid-template-rows: 15rem 400px 1fr auto;
-    }
+.rubrik_1{
+    grid-area: rubrik1;
+}
+
+.rubrik_2{
+    grid-area: rubrik2;
+}
+
+.stycke1{
+    grid-area: text1;
+}
+
+.stycke2{
+    grid-area: text2;
+}
+
+.inforuta{
+    grid-area: inforuta;
+}
+
+.footer{
+    grid-area: footer;
 }
