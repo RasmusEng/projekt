@@ -1,5 +1,7 @@
 :root{
-
+    --colorw: white;
+    --colorb: #3C4258;
+    --colorblack: black;
 }
 
 body{
@@ -9,9 +11,11 @@ body{
 
 header{
     width: 100%;
-    height: 70px;
-    background-color: black;
+    min-height: 80px;
+    background-color: var(--colorblack);
+    color: var(--colorw);
 }
+
 
 .rubrik{
     position: absolute;
@@ -19,7 +23,6 @@ header{
     float: left;
     margin-left: 2%;
     margin-top: 10px;
-    color: white;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -31,13 +34,20 @@ header{
 .links{
     width: auto;
     float: right;
-    margin-top: 5px;
+    margin: 0;
+    padding: 0;
     font-size: 20px;
+    height: 70px;
 }
 
 .planetlist{
     display: inline-block;
     padding: 15px 30px;
+}
+
+.planetlist a {
+    display: block;
+    padding: 10px;
 }
 
 .planet{
@@ -47,20 +57,34 @@ header{
     color: white;
 }
 
+.planet:hover{
+    background-color: var(--colorb);
+}
+
 .main{
     width: 100%;
     display: grid;
     grid-template-areas: 
     'contents inforuta'
-    'footer footer'
     ;
     grid-template-columns: 1fr 400px;
-    grid-template-rows: 1fr 400px;
+    grid-template-rows: 1fr;
+    margin-bottom: 10px;
+}
+
+.bild  {
+    width: 100%;
+}
+
+.inforuta{
+    grid-area: inforuta;
+    border: 1px solid var(--colorblack);
+    margin-right: 5px;
 }
 
 .content{
     grid-area: contents;
-
+    display: grid;
     grid-template-areas: 
     'intro'
     'rubrik1'
@@ -68,14 +92,12 @@ header{
     'rubrik2'
     'text2'
     ;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
 }
 
 .introduktion{
     grid-area: intro;
-}
-
-.rubrik{
-    color: black;
 }
 
 .rubrik_1{
@@ -92,12 +114,23 @@ header{
 
 .stycke2{
     grid-area: text2;
-}
-
-.inforuta{
-    grid-area: inforuta;
+    margin-bottom: 0;
 }
 
 .footer{
     grid-area: footer;
+    height: 50px;
+    background-color: var(--colorblack);
+
+    color: var(--colorw);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.footer a{
+    text-decoration: none;
+    color: var(--colorw);
+}
+
