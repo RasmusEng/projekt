@@ -1,7 +1,7 @@
 :root{
     --colorw: white;
     --colorb: #3C4258;
-    --colorblack: black;
+    --colorblack: rgba(2, 2, 2);
 }
 
 body{
@@ -303,5 +303,29 @@ footer{
 
 .links{
     display: grid;
+}
+}
+
+@media all and (max-width: 1000px){
+
+.main{
+    grid-template-areas: 
+    'inforuta'
+    'contents'
+    'bildspel'
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.inforuta{
+    margin-right: 20px;
+}
+
+.bild{
+    margin: 0;
+    margin-top: 70px;
+    width: 100%;
 }
 }
