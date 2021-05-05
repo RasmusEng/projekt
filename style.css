@@ -245,7 +245,6 @@ footer{
     color: var(--colorw);
 }
 
-
 @media all and (max-width: 1600px){
 
 .valkatalog{
@@ -328,4 +327,5 @@ footer{
     margin-top: 70px;
     width: 100%;
 }
+
 }
