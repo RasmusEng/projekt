@@ -32,3 +32,5 @@ footern
 slidern
 
 skriva texten och länka till källor
+
+Använde transform: scale() för att scala ner bildspelet
