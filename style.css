@@ -1,7 +1,8 @@
 :root{
     --colorw: white;
-    --colorb: #3C4258;
-    --colorblack: rgba(2, 2, 2);
+    --colorgrey: #3C4258;
+    --colorblack: rgb(2, 2, 2);
+    --colorblue: rgb(21, 65 , 140);
 }
 
 body{
@@ -60,7 +61,7 @@ header{
 }
 
 .planet:hover{
-    background-color: var(--colorb);
+    background-color: var(--colorblue);
 }
 
 .main{
@@ -344,11 +345,11 @@ footer{
 }
 }
 
-
 @media all and (max-width: 500px){
 
-header{
-    min-height: 100px;
+.rubrik{
+    top: 10px;
+    font-size: 23px;
 }
 
 .slideshow-container {
@@ -364,16 +365,34 @@ header{
     right: -200px;
 }
 
-.toggle{
-    top: 50px;
-}
-
 .open{
     right: 0;
 }
 
 .planet{
     font-size: 15px;
+}
+}
+
+@media all and (max-width: 350px){
+.rubrik{
+    top: 10px;
+}
+
+.slideshow-container {
+    transform: scale(0.45);
+}
+
+.logo{
+    transform: scale(0.4);
+}
+.valkatalog{
+    width: 150px;
+    right: -150px;
+}
+
+.open{
+    right: 0;
 }
 
 }
