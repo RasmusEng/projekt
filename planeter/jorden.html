@@ -4,55 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solsystemet</title>
-    <link rel="stylesheet" href="../style.css>
-    <link rel="shortcut icon" href="../bilder/jorden.png" type="image/x-icon">
+    <title>Rymdinfo</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="bilder/solsystem.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="main">
-        <h1 class="namn namn__rubrik">Jorden</h1>
-        <nav class="valkatalog" id="nav">
-            <div class="toggle" onclick="myFunction(this)" id="x">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>           
-            <a class="planet planet__merkurius" href="../index.html">Solsystemet</a>
-            <a class="planet planet__venus" href="../planeter/merkurius.html">Merkurius</a>
-            <a class="planet planet__jorden" href="../planeter/venus.html">Venus</a>
-            <a class="planet planet__mars" href="../planeter/mars.html">Mars</a>
-            <a class="planet planet__jupiter" href="../planeter/jupiter.html">Jupiter</a>
-            <a class="planet planet__saturnus" href="../planeter/saturnus.html">Saturnus</a>
-            <a class="planet planet__uranus" href="../planeter/uranus.html">Uranus</a>
-            <a class="planet planet__neptunus" href="../planeter/neptunus.html">Neptunus</a>
-        </nav>
-        <div class="content">
-            <img class="bild bild__allt" src="../bilder/jorden.png" alt="">
-            <p class="introduktion">Jorden är den tredje planetet frpån solen i vårant solsystem, och den enda planeten som vi vet att det finns liv på</p>
-            <div class="textstycke">
-                <h3 class="rubrik rubrik_1">Rubrik 1</h3>
-                <p class="stycke1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis beatae non ab suscipit minima possimus iusto quos exercitationem vitae asperiores perspiciatis sapiente distinctio, nisi ea aliquam consequatur perferendis earum amet, aut nam adipisci accusantium in eveniet veniam. Recusandae ab sequi iure incidunt laboriosam distinctio cumque accusamus, vitae quia dolorum libero adipisci, deserunt earum non necessitatibus rerum voluptatem! Odit cumque dignissimos illum natus doloribus dolores officiis odio fuga est. Voluptatem tempore possimus aliquid impedit optio, tempora eius hic dignissimos temporibus est error deleniti repellendus vel, quo quod corrupti delectus? Minus, et! Autem tenetur nisi consequatur maxime necessitatibus distinctio sed labore doloribus voluptas ratione minus, optio dignissimos! Quam nesciunt dignissimos numquam laudantium. Autem pariatur est voluptatibus beatae eum magni, architecto deleniti soluta, neque doloribus optio fugiat tempore, hic laborum alias corrupti accusamus! Consectetur veritatis porro veniam omnis magni, illum placeat odio molestias quibusdam accusantium nemo doloribus impedit velit optio quia repudiandae fugiat delectus est? Nobis nemo soluta quod atque perspiciatis. Corporis nihil ipsum praesentium explicabo dolores quisquam perferendis unde, ea amet recusandae voluptatum ducimus laboriosam ut error nemo voluptatem reiciendis ullam </p>
-                <h3 class="rubrik rubrik_2">Tys ass lika sant</h3>
-                <p class="stycke2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla accusamus cupiditate a numquam autem cum asperiores facere possimus? Eaque tenetur vero deserunt rerum facilis animi ipsa amet nisi eius quam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos impedit optio dolorem aperiam suscipit architecto modi, qui similique doloremque quae consequuntur perferendis reprehenderit voluptatibus dicta quisquam quasi facilis harum.</p>
+        <header>
+            <h1 class="rubrik">Rymdinfo</h1>
+            <nav class="valkatalog" id="nav">
+                <div class="toggle" onclick="myFunction(this)" id="x">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <ul class="links">
+                    <li class="planetlist">
+                        <a class="planet" href="planeter/merkurius.html">Merkurius</a>
+                    </li>
+                    <li class="planetlist">
+                        <a class="planet" href="planeter/venus.html">Venus</a>
+                    </li>
+                    <li class="planetlist">
+                        <a class="planet" href="planeter/jorden.html">Jorden</a>
+                    </li>
+                    <li class="planetlist">
+                        <a class="planet" href="planeter/mars.html">Mars</a>
+                    </li>
+                    <li class="planetlist">
+                        <a class="planet" href="planeter/jupiter.html">Jupiter</a>
+                    </li>
+                    <li class="planetlist">
+                        <a class="planet" href="planeter/saturnus.html">Saturnus</a>
+                    </li>
+                    <li class="planetlist">
+                        <a class="planet" href="planeter/uranus.html">Uranus</a>
+                    </li>
+                    <li class="planetlist">
+                        <a class="planet" href="planeter/neptunus.html">Neptunus</a>
+                    </li>
+                </ul>           
+            </nav>
+        </header>
+        <img class="bild" src="bilder/sliced.png" alt="">
+        <div class="main">
+            <div class="content">
+                <p class="introduktion">Vårat solsystem är cirka 4.5 miljarder år gammalt och är hem till en sol, 8 planeter Merkurius och 5 dvärgplaneter och miljontals mindre himlakroppar som antingen har en omlopsbana runt solen eller några av våra planeter. Men vaför ska svi bry oss om rymden om vi ändå har en massa ploblem här på jorden, </p>
+                <div class="textstycke">
+                    <h2 class="rubrik_1">Solen</h2>
+                    <p class="stycke stycke1">
+                        Solen är stjärnan och centrumet av vårat solsystem och har en massan på 332 830 jordmassor vilket gör att dess inre tillräckligt hög densitet för att genomföra fusion. Våran sol är en så kallad Gul dvärg trotts att den är relativt stor och ljusstark och större än 85% av alla stjärnor i vintergatan. Solen befinner sig i mitten av en den skållade huvudserien och ännu inte gjort slut på sitt väteförrådet som används till fusionen. Våran sol är en <a href="https://sv.wikipedia.org/wiki/Metallicitet">population I-stjärna</a>  och bildades under de senare dealarna av universums tillväxt 
+                    </p>
+                    <h2 class="rubrik_2">De inte planeterna</h2>
+                    <p class="stycke stycke2">
+                        De inre planeterna är Merkurius, Venus, Jorden(Tellus) och Mars är lite annorlunda jämfört med de andra planeterna i vårt solsystem eftersom de är stenplaneter och inte gasplaneter. Detta betyder att skorpan ör fast vilket gör att vi människor skulle kunna stå på dessa planeter, tyvärr finns det flera hinder för att vi människor ska kolonisera dessa planeter. Men företag som <a href="https://www.spacex.com/">SpaceX</a>, <a href="https://www.nasa.gov/">Nasa</a> och <a href="https://www.blueorigin.com/">Blue Origin</a> jobbar hårt för att försöka kolonisera månen och mars vilket skulle göra att människan kan leva vidare även om det sker en stor katastrof här på Jorden. Och vi ser redan stora framsteg då Nasa har landat ett flertal Rovers på mars och SpaceX har lyckats landa en raket vilket gör att rymdresor blir mycket billigare.  
+                    </p>
+                </div>
             </div>
             <aside class="inforuta" id="info">
                 <h2 class="inforubrik">Snabbinfo</h2>
                 <ul class="lista">
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Ålder</li>
+                    <li>Storlek</li>
+                    <li>Soltyp</li>
+                    <li>Antal planeter</li>
                 </ul>
             </aside>
         </div>
-        <footer class="footer" id="foot"> 
-            <a  class="github" href="https://github.com/RasmusEng/projekt">Github</a>
-            <a href="footer/bildegalleri.html">Bildegalleri</a>
-            <a href="footer/videogalleri.html">Videogalleri</a>
-        </footer>
+        <div class="slideshow-container">
+            <!-- Alla olika bilder -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="bilder/milkyway.jpg">
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="bilder/solsystem1.jpg">
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="bilder/solsystem1.jpg">
+            </div>
+
+            <!-- Fram och tillbaka  -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- Cirklarna under -->
+            <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
     </div>
-    <script src="../java-library/app.js"></script>
-    <script src="../java-library/knapp.js"></script>
+    <footer class="footer">
+        <div class="uppdaterad">
+            <img class="logo" src="bilder/placeholder.png" alt="">
+            <p class="senastuppdaterad">Senast uppdaterad: 2021-05-03</p>
+        </div>
+        <div class="vidare">
+            <a href="https://github.com/RasmusEng/projekt">Github</a>
+            <a href="footer/videogalleri.html">Videogalleri</a>
+        </div>
+    </footer>
+    <script src="java-library/app.js"></script>
+    <script src="java-library/knapp.js"></script>
+    <script src="java-library/bildspel.js"></script>
 </body>
 </html>
