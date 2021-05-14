@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.rubrik{
+    font-family: 'Fugaz One', cursive;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.video{
+    width: 95%;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    gap: 1.6rem 1.6rem;
+}
+
+iframe{
+    border: 5px solid white;
+    border-radius: 3px;
+}
+
+iframe:hover:nth-child(odd){
+    transform: rotate(-10deg);
+    transition: 0.3s;
+
+}
+iframe:hover:nth-child(even){
+    transform: rotate(10deg);
+    transition: 0.3s;
+}
