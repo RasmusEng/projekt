@@ -67,6 +67,7 @@ header{
 .planet:hover{
     background-color: var(--colorblue);
     border-radius: 30%;
+    border: 4px solid var(--colorw);
 }
 
 .main{
