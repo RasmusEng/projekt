@@ -2,6 +2,9 @@ body{
     margin: 0;
     padding: 0;
     background-color: black;
+    background-image: url(/bilder/teahub.io-space-wallpaper-4k-115960.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header{
@@ -10,15 +13,23 @@ header{
     'knapp text .';
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 75px;
+    background-color: teal;
 }
 
 .tillbaka{
     grid-area: knapp;
-
+    padding: 10px;
     align-self: center;
-    margin-left: 50px;
+    margin-left: 80px;
+    margin-top: 10px;
 }
 
+.tillbaka:hover{
+    background-color: rgb(21, 65 , 140);
+    border: 4px solid white;
+    border-radius: 4px;
+    max-width: 40px;
+}
 
 .bar1, .bar2, .bar3{
     width: 35px;
@@ -59,6 +70,7 @@ header{
     grid-template-columns: repeat(auto-fit, 300px);
     justify-content: center;
     gap: 1.6rem 1.6rem;
+    margin-bottom: -50px;
 }
 
 iframe{
@@ -74,4 +86,12 @@ iframe:hover:nth-child(odd){
 iframe:hover:nth-child(even){
     transform: rotate(5deg);
     transition: 0.3s;
+}
+
+
+
+footer{
+    position: sticky;
+
+    background-color: teal;
 }
