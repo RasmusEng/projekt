@@ -1,5 +1,5 @@
 'use strict'
-
+/*  */
 let van = document.getElementById('nav')
 let x = document.getElementById('x')
 
