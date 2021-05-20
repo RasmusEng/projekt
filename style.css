@@ -8,8 +8,8 @@
 /* Ny scrollbar */
 ::-webkit-scrollbar-track
 {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+    border-radius: 5px;
     background-color: #F5F5F5;
 }
 
@@ -23,7 +23,6 @@
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
     background-color: var(--colorgrey);
-    background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 200) 50%, transparent, transparent)
 }
 
 /* Sätter margin padding till 0 och tar bort scrollen på x axeln 
@@ -301,6 +300,10 @@ footer{
 .vidare a{
     text-decoration: none;
     color: var(--colorw);
+}
+
+.mail{
+    margin-bottom: 0;
 }
 
 @media all and (max-width: 1600px){
