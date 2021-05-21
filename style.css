@@ -277,16 +277,18 @@ header{
 footer{
     background-color: var(--colorblack);
     height: 280px;
-    color: var(--colorw);
-    
-    position: sticky;
+    width: 100%;
+    position: absolute;
+    bottom: -50;
 
+    color: var(--colorw);
     display: grid;
     grid-template-areas:  
     'bild links .'
     ;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 300px 200px;
+    
 }
 
 .uppdaterad{

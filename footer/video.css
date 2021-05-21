@@ -91,7 +91,9 @@ iframe:hover:nth-child(even){
 
 
 footer{
-    position: sticky;
+    position: absolute;
+    width: 100%;
+    bottom: -50;
 
     background-color: teal;
 }
