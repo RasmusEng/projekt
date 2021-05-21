@@ -102,16 +102,15 @@ header{
 
 /* Texten alt info osv */
 .main{
-    width: 100%;
+
     display: grid;
     grid-template-areas: 
-    'contents inforuta'
-    'bildspel bildspel'
+    '. contents inforuta .'
+    '. bildspel bildspel . '
     ;
-    grid-template-columns: 1fr 400px;
+    grid-template-columns:1fr auto 400px 1fr;
     grid-template-rows: 1fr auto;
     margin-bottom: 10px;
-    background-color: rgba(2, 2, 2, 0.3);
     color: white;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -124,10 +123,12 @@ header{
     border: 1px solid var(--colorblack);
     margin-right: 20px;
     max-height: 500px;
+    background-color: rgba(2, 2, 2, 0.3);
 }
 
 /*Text*/
 .content{
+    background-color: rgba(2, 2, 2, 0.3);
     grid-area: contents;
     display: grid;
     grid-template-areas: 
@@ -142,8 +143,8 @@ header{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7, auto);
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 10px;
-    margin-bottom: -50px;
+    padding: 10px;
+    max-width: 1000px;
 }
 
 .content a:link{
