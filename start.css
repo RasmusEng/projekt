@@ -1,0 +1,96 @@
+:root{
+    --colorw: white;
+    --colorblue: rgb(21, 65 , 140);
+    --colorbackt: rgba(0,0,0,0.7);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    background-image: url(/bilder/startbakgrund.jpg);
+    background-repeat: no-repeat;
+    background: cover;
+    display: flex;
+    justify-content: center;
+}
+
+/* Ringen runt text */
+.val{
+    color: var(--colorw);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 1500px;
+    width: 1500px;
+    background-color: var(--colorbackt);
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 10px var(--colorbackt);
+}
+
+/* Texten */
+.next{
+    text-decoration: none;
+    color: var(--colorw);
+    font-size: 50px;
+    font-family: 'Righteous', cursive;
+}
+
+.next:hover{
+    color: var(--colorblue);
+}
+
+@media all and (max-width: 2600px){
+.val{
+    height: 1200px;
+    width: 1200px;
+}
+}
+
+@media all and (max-width: 1600px){
+.val{
+    height: 900px;
+    width: 900px;
+}
+}
+
+@media all and (max-width: 1200px){
+.val{
+    height: 700px;
+    width: 700px;
+}
+
+.next{
+    font-size: 45px;
+}
+}
+
+@media all and (max-width: 800px){
+.val{
+    height: 600px;
+    width: 600px;
+}
+}
+
+@media all and (max-width: 600px){
+.val{
+    height: 400px;
+    width: 400px;
+}
+
+.next{
+    font-size: 35px;
+}
+}
+
+@media all and (max-width: 400px){
+.val{
+    height: 350px;
+    width: 350px;
+}
+
+.next{
+    font-size: 30px;
+}
+}
