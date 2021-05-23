@@ -47,7 +47,12 @@ body{
     width: 1200px;
 }
 }
-
+@media all and (max-width: 1900px){
+.val{
+    height: 800px;
+    width: 1000px;
+}
+}
 @media all and (max-width: 1600px){
 .val{
     height: 900px;
