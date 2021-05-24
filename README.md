@@ -6,8 +6,11 @@
 
 ##Support
 
-**Notera**: "Support" är ingen garanti och kan bero på olika verisioner av men de versioner som är nämda här är testade och ska fungerar som .
+**Notera**: "Support" är ingen garanti och kan bero på olika verisioner av men de versioner som är nämda här är testade och ska fungerar som planerat.
 
-| Safari | Chrome | Firefox | Microsoft Edge | Opera |
-|--------|--------|---------|----------------|-------|
-| 13.1   | 90     | 88      | 90             | 76    |
+| Safari | Chrome | Firefox | Microsoft Edge | Opera | Samsung internet |
+|--------|--------|---------|----------------|-------|------------------|
+| 13.1   | 90     | 88      | 90             | 76    | 14.0.3.5         |
+
+##Förbättnignar
+En stor förbättring som jag skulle kunna göra är att använda mig av ett stylesheet och sotera filträdet på ett bättre sätt.
