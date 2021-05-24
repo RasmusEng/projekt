@@ -1,9 +1,13 @@
 body{
     margin: 0;
     padding: 0;
+    min-height: 100vh;
     background-color: black;
     background: url(../bilder/videobak.png) no-repeat center center fixed;
     background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
 }
 
 header{
@@ -68,14 +72,14 @@ header{
 
 .video{
     width: 95%;
-    margin: 250px auto 0 auto;
+    margin: 150px auto 0 auto;
     
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
     justify-content: center;
     
     gap: 1.6rem 1.6rem;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     max-width: 1500px;
 }
 
@@ -95,9 +99,12 @@ iframe:hover:nth-child(even){
 }
 
 footer{
-    position: absolute;
     height: 200px;
     width: 100%;
     background-color: teal;
     color: white;
+}
+
+.uppdaterad{
+    padding: 10px;
 }
