@@ -15,7 +15,6 @@
 
     background-image: url("../bilder/backgrund.jpg");
     background-position: center;
-    background-repeat: no-repeat;
     background: cover;
 }
 
@@ -89,7 +88,9 @@ header{
     margin: 0;
     padding: 0;
     font-size: 20px;
-    height: 70px;
+    height: 30px;
+
+    color: var(--colorblue);
 }
 
 .planetlist{
@@ -277,7 +278,7 @@ header{
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-    margin-bottom: 200px;
+    margin-bottom: 0px;
 }
 
 .active, .dot:hover {
@@ -305,19 +306,17 @@ header{
 footer{
     background-color: var(--colorblack);
     
-    height: 280px;
+    height: 300px;
     width: 100%;
-    position: absolute;
-    bottom: -200;
 
     color: var(--colorwhite);
     display: grid;
     grid-template-areas:  
-    'bild links .'
+    'bild links'
     ;
     
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 300px 200px;
+    grid-template-columns: 1fr 300px;
 }
 
 .uppdaterad{
@@ -329,6 +328,7 @@ footer{
 .vidare{
     grid-area: links;
     margin-top: 50px;
+    margin-left: 30px;
     display: grid;
 }
 
@@ -415,6 +415,10 @@ footer{
 .links{
     display: grid;
 }
+
+footer{
+    bottom: -100;
+}
 }
 
 @media all and (max-width: 1000px){
@@ -443,12 +447,18 @@ footer{
     margin-top: 70px;
     width: 100%;
 }
-
+.logo{
+    display: none;
+    width: 0;
+    height: 0;
+}
 footer{
     grid-template-areas: 
-    'bild links';
-    grid-template-columns: 1fr 1fr;
+    'bild '
+    'links';
+    grid-template-rows: repeat(2, 1fr);
 }
+
 }
 
 @media all and (max-width: 500px){
