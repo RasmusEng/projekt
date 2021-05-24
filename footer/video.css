@@ -3,8 +3,7 @@ body{
     padding: 0;
     background-color: black;
     background-image: url(../bilder/videobak.png);
-    background-position: center;
-    background: cover;
+    background-size: cover;
 }
 
 header{
@@ -97,7 +96,8 @@ iframe:hover:nth-child(even){
 
 footer{
     position: absolute;
+    height: 300px;
     width: 100%;
-    margin-top: 150px;
     background-color: teal;
+    bottom: 0;
 }

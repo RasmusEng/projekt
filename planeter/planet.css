@@ -15,7 +15,7 @@
 
     background-image: url("../bilder/backgrund.jpg");
     background-position: center;
-    background: cover;
+    background-size: cover;
 }
 
 /* Ny scrollbar */
