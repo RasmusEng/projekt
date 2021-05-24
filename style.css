@@ -11,7 +11,7 @@ body{
 
     background-image: url(bilder/startbakgrund.jpg);
     background-repeat: no-repeat;
-    background: cover;
+    background-size: cover;
     display: flex;
     justify-content: center;
 }

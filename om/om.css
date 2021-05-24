@@ -10,6 +10,7 @@ body{
 
     background-image: url(../bilder/om.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header{
