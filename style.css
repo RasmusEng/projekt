@@ -46,12 +46,13 @@ body{
     height: 1200px;
     width: 1200px;
 }
-}
-@media all and (max-width: 1900px){
-.val{
-    height: 800px;
-    width: 1000px;
-}
+
+@media all and (max-width: 2000px){
+    .val{
+        height: 900px;
+        width: 900px;
+    }
+
 }
 @media all and (max-width: 1600px){
 .val{
