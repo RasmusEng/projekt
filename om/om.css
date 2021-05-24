@@ -8,8 +8,7 @@ body{
     margin: 0;
     padding: 0;
 
-    background-image: url(../bilder/om.jpg);
-    background-repeat: no-repeat;
+    background: url(../bilder/om.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 

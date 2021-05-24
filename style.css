@@ -9,9 +9,8 @@ body{
     padding: 0;
     overflow: hidden;
 
-    background-image: url(bilder/startbakgrund.jpg);
-    background-repeat: no-repeat;
-
+    background: url(bilder/startbakgrund.jpg) no-repeat center center fixed;
+    background-size: cover;
     display: flex;
     justify-content: center;
 }
