@@ -305,8 +305,8 @@ header{
 /* Footern */
 footer{
     background-color: var(--colorblack);
-    
-    height: 300px;
+    bottom: 0;
+    height: 310px;
     width: 100%;
 
     color: var(--colorwhite);
