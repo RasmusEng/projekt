@@ -10,5 +10,4 @@
 
 | Safari | Chrome | Firefox | Microsoft Edge | Opera |
 |--------|--------|---------|----------------|-------|
-| 13.1 \textcolor{green}{green}| 90 \textcolor{green}{green} | 88 \textcolor{green}{green}| 90 \textcolor{green}{green} | 76 \textcolor{green}{green}|
-|--------|--------|---------|----------------|-------|
+| 13.1   | 90     | 88      | 90             | 76    |
