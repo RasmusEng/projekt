@@ -16,9 +16,9 @@
 
 En stor förbättring som jag skulle kunna göra är att använda mig av ett stylesheet och sotera filträdet på ett bättre sätt. Att använda ett Stylesheet gör det enklare att underhålla sidan då allt finns på samma plats. Bättre prestanda för videogalleriet
 
-## W3schools
+## [W3schools](https://www.w3schools.com/)
 
-### Menu icon
+### [Menu icon](https://www.w3schools.com/howto/howto_css_menu_icon.asp)
 
 ```html
 <div class="toggle" onclick="myFunction(this)" id="x">
@@ -56,7 +56,7 @@ En stor förbättring som jag skulle kunna göra är att använda mig av ett sty
 }
 ```
 
-### Slideshow
+### [Bildspel](https://www.w3schools.com/howto/howto_js_slideshow.asp)
 
 ```html
   <div class="slideshow-container">
