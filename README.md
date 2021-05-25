@@ -12,9 +12,13 @@
 |--------|--------|---------|----------------|-------|------------------|
 | 13.1   | 90     | 88      | 90             | 76    | 14.0.3.5         |
 
-## Förbättnignar
+## Upphovsrätt och lagar
+Sidan använder bilder och ikoner som är utgivnga gratis och inte har något kopieringsförjbud
 
-En stor förbättring som jag skulle kunna göra är att använda mig av ett stylesheet och sotera filträdet på ett bättre sätt. Att använda ett Stylesheet gör det enklare att underhålla sidan då allt finns på samma plats. Bättre prestanda för videogalleriet
+## Förbättnignar
+En stor förbättring som jag skulle kunna göra är att använda mig av ett stylesheet och sotera filträdet på ett bättre sätt. Att använda ett Stylesheet gör det enklare att underhålla sidan då allt finns på samma plats. Bättre prestanda för videogalleriet och mer ordning när det kommer till html taggarna, genom att ha samma stylesheet hade jag haft samma values och sidorna hade varit liknande.
+
+
 
 ## [W3schools](https://www.w3schools.com/)
 
