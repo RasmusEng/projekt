@@ -12,18 +12,19 @@
 |--------|--------|---------|----------------|-------|------------------|
 | 13.1   | 90     | 88      | 90             | 76    | 14.0.3.5         |
 
+
 ## Upphovsrätt och lagar
-Sidan använder bilder och ikoner som är utgivnga gratis och inte har något kopieringsförjbud
+Sidan använder bilder och ikoner som är utgivnga gratis och inte har något bjudits kopieringsförjbud då bildarna jag använt är tagna från [Nasa](https://www.nasa.gov/) eller hemsidor som har publicerat bilder som är tillåtna att använda för privat bruk då upphovsmannen har tillåtit det. 
 
 ## Förbättnignar
-En stor förbättring som jag skulle kunna göra är att använda mig av ett stylesheet och sotera filträdet på ett bättre sätt. Att använda ett Stylesheet gör det enklare att underhålla sidan då allt finns på samma plats. Bättre prestanda för videogalleriet och mer ordning när det kommer till html taggarna, genom att ha samma stylesheet hade jag haft samma values och sidorna hade varit liknande.
+En stor förbättring som jag skulle kunna göra är att använda mig av ett stylesheet och sotera filträdet på ett bättre sätt. Att använda ett Stylesheet gör det enklare att underhålla sidan då allt finns på samma plats. Bättre prestanda för videogalleriet och mer ordning när det kommer till html taggarna, genom att ha samma stylesheet hade alla sidor haft samma design. När det kommer till prestanda och hastighet på sidan ska det inte vara något problem förutom när du precis kommer in i videogalleriet eftersom du måste ladda in en massa olika youtube videos vilket i vissa fall kan vara krävande och långsamt. Jag la in lazy loading  i iframe taggarna vilket gör att videorna som inte syns inte laddas in, detta gör så att telefoner som inte har samma prestanda som datorer kan ladda in en bild i taget.
 
-
+### Design
+När det kommer till designen av sidan skulle jag kunnat förbättra en hel del då jag stötte en hel del problem när det gäller bilder och hur jag valde att lägga upp sidan. Den ändringen jag skulle vilja göra i efterhand är att få sidan enklare att navigera då navbaren på hemsidan är lite klurig eftersom den förändras beroende på vilken sida du är på bara från navbaren.
 
 ## [W3schools](https://www.w3schools.com/)
 
 ### [Menu icon](https://www.w3schools.com/howto/howto_css_menu_icon.asp)
-
 ```html
 <div class="toggle" onclick="myFunction(this)" id="x">
     <div class="bar1"></div>
@@ -61,36 +62,35 @@ En stor förbättring som jag skulle kunna göra är att använda mig av ett sty
 ```
 
 ### [Bildspel](https://www.w3schools.com/howto/howto_js_slideshow.asp)
-
 ```html
-  <div class="slideshow-container">
-            <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="bild.png">
-            </div>
+<div class="slideshow-container">
+    <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="bild.png">
+</div>
 
-            <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="bild.png">
-            </div>
+<div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="bild.png">
+</div>
 
-            <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="bild.png">
-            </div>
+<div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="bild.png">
+</div>
 
-            <!-- Fram och tillbaka  -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
+<!-- Fram och tillbaka  -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
 
-            <!-- Cirklarna under -->
-            <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
+<!-- Cirklarna under -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
 ```
 
 ```css
@@ -188,6 +188,7 @@ En stor förbättring som jag skulle kunna göra är att använda mig av ett sty
 ```
 
 ```js
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -217,3 +218,5 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 ```
+
+
