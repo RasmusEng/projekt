@@ -1,8 +1,12 @@
 # Rymdresan | Webbutveckling 1 Projekt
+## Info
+**Rymdresor är en hemsida för dig som vill lära dig lite mer om rymden på ett enkelt och smidigt sätt**
 
 [Hemsida](https://rasmuseng.github.io/projekt/)
 
-**Rymdresor är en hemsida för dig som vill lära dig lite mer om rymden på ett enkelt och smidigt sätt**
+Namn: Rasmus Engström
+Skola: Nyköpings Gymnasium Gripen
+Datum: 24 Maj 2021
 
 ## Support
 
@@ -14,17 +18,21 @@
 
 
 ## Upphovsrätt och lagar
-Sidan använder bilder och ikoner som är utgivnga gratis och inte har något bjudits kopieringsförjbud då bildarna jag använt är tagna från [Nasa](https://www.nasa.gov/) eller hemsidor som har publicerat bilder som är tillåtna att använda för privat bruk då upphovsmannen har tillåtit det. 
+Sidan använder bilder och ikoner som är utgivnga gratis och inte har något bjudits kopieringsförjbud då bildarna jag använt är tagna från [Nasa](https://www.nasa.gov/) eller hemsidor som har publicerat bilder som är tillåtna att använda för privat bruk då upphovsmannen har tillåtit det. Något som jag skulle vilja göra är att varje bild ska ha en länk som leder dit jag hämtade bilden ifrån. Detta hade gjort det enklare för använderen av hemsidan att hitta bilderna om personen skulle vara intresserad att 
 
 ## Förbättnignar
-En stor förbättring som jag skulle kunna göra är att använda mig av ett stylesheet och sotera filträdet på ett bättre sätt. Att använda ett Stylesheet gör det enklare att underhålla sidan då allt finns på samma plats. Bättre prestanda för videogalleriet och mer ordning när det kommer till html taggarna, genom att ha samma stylesheet hade alla sidor haft samma design. När det kommer till prestanda och hastighet på sidan ska det inte vara något problem förutom när du precis kommer in i videogalleriet eftersom du måste ladda in en massa olika youtube videos vilket i vissa fall kan vara krävande och långsamt. Jag la in lazy loading  i iframe taggarna vilket gör att videorna som inte syns inte laddas in, detta gör så att telefoner som inte har samma prestanda som datorer kan ladda in en bild i taget.
+En stor förbättring som jag skulle kunna göra är att använda mig av ett stylesheet och sotera filträdet på ett bättre sätt. Att använda ett Stylesheet gör det enklare att underhålla sidan då allt finns på samma plats. Bättre prestanda för videogalleriet och mer ordning när det kommer till html taggarna, genom att ha samma stylesheet hade alla sidor haft samma design. När det kommer till prestanda och hastighet på sidan ska det inte vara något problem förutom när du precis kommer in i videogalleriet eftersom du måste ladda in en massa olika youtube videos vilket i vissa fall kan vara krävande och långsamt. Jag la in lazy loading  i iframe taggarna vilket gör att videorna som inte syns inte laddas in, detta gör så att telefoner som inte har samma prestanda som datorer kan ladda in en bild i taget. Sidan är gjord på ett sätt där det skulle vara ganska svårt att föra in flera sidor om man skulle vilja skriva om tillexempel astroidbältet.
 
 ### Design
-När det kommer till designen av sidan skulle jag kunnat förbättra en hel del då jag stötte en hel del problem när det gäller bilder och hur jag valde att lägga upp sidan. Den ändringen jag skulle vilja göra i efterhand är att få sidan enklare att navigera då navbaren på hemsidan är lite klurig eftersom den förändras beroende på vilken sida du är på bara från navbaren.
+När det kommer till designen av sidan skulle jag kunnat förbättra en hel del då jag stötte en hel del problem när det gäller bilder och hur jag valde att lägga upp sidan. Den ändringen jag skulle vilja göra i efterhand är att få sidan enklare att navigera då navbaren på hemsidan är lite klurig eftersom den förändras beroende på vilken sida du är på bara från navbaren. För att göra det enklare för användaren skulle jag jort så att navbaren var en under headern. Detta hade gjort det enklare att föra in och komma på nya ideer och en enklare sida att förså och navigera, sedan modularitet är något som hade varit ett större problem då det inte finns något plats i headern att lägga till nya saker på ett snyggt och smidigt sätt.
 
-## [W3schools](https://www.w3schools.com/)
+### Insperation
+Jag har tagit insperation från sidor som [Apple](https://www.apple.com/se/), [Nasa](https://www.nasa.gov/), [Blizzard](https://eu.shop.battle.net/en-gb) och [Samsungs](https://www.samsung.com/se/) hemsidor då jag tycket att de är gjorda och konstruerade på ett snyggt och effektivt sätt då vem som hällst utan problem kan navigera sig genom sidorna, även fast de har olika designer.
 
-### [Menu icon](https://www.w3schools.com/howto/howto_css_menu_icon.asp)
+## Tagen kod
+Både meny ikonen och bilspelet är tagen från [W3schools](https://www.w3schools.com/) och slidern gjorde vi i skolan me hjälp från läraren. Men vilka risker finns det när man använder någon annans kod. Det kan finnas stora risker när du avnänder okänd kod då koden kan vara bskadlig för användaren eller din hemsida.
+
+### [Meny ikon](https://www.w3schools.com/howto/howto_css_menu_icon.asp)
 ```html
 <div class="toggle" onclick="myFunction(this)" id="x">
     <div class="bar1"></div>
@@ -218,5 +226,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 ```
+
+### Slider
 
 
