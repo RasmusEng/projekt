@@ -18,11 +18,22 @@ Datum: 24 Maj 2021
 
 | Safari | Chrome | Firefox | Microsoft Edge | Opera | Samsung internet |
 |--------|--------|---------|----------------|-------|------------------|
-| 13.1   | 90     | 88      | 90             | 76    | 14.0.3.5         |
+| 14     | 90     | 88      | 90             | 76    | 14.0.3.5         |
+| 13.1   | 89     | 87      | 89             | 75    |                  |
 
 
 ## Upphovsrätt och lagar
-Sidan använder bilder och ikoner som är utgivnga gratis och inte har något bjudits kopieringsförjbud då bildarna jag använt är tagna från [Nasa](https://www.nasa.gov/) eller hemsidor som har publicerat bilder som är tillåtna att använda för privat bruk då upphovsmannen har tillåtit det. Något som jag skulle vilja göra är att varje bild ska ha en länk som leder dit jag hämtade bilden ifrån. Detta hade gjort det enklare för använderen av hemsidan att hitta bilderna om personen skulle vara intresserad att 
+Sidan använder bilder och ikoner som är utgivnga gratis och inte har något upphovsrättsskyddat då bildarna jag använt är tagna från [Nasa](https://www.nasa.gov/) eller hemsidor som har publicerat bilder som är tillåtna att använda för privat bruk då upphovsmannen har tillåtit det. Något som jag skulle vilja göra är att varje bild ska ha en länk som leder dit jag hämtade bilden ifrån, detta hade gjort det enklare för använderen av hemsidan att hitta bilderna om personen skulle vara intresserad att använda de själva.
+
+## Webbhotell
+
+
+### Github
+En fördel med att använda GitHub som ett webbhotell är att det är en gratis tjänst och hosting genom github pages. En nackdel med github är att du behöver göra sidan själv och därmed behöver kunskap inom html och css åtminståne. Detta gör att det inte skulle vara aktuellt för någon som inte har någon förkunskap inom detta område och bara vill ha en hemsida. 
+
+### Loopia
+
+### Miss hosting
 
 ## Förbättnignar
 En stor förbättring som jag skulle kunna göra är att använda mig av ett stylesheet och sotera filträdet på ett bättre sätt. Att använda ett Stylesheet gör det enklare att underhålla sidan då allt finns på samma plats. Bättre prestanda för videogalleriet och mer ordning när det kommer till html taggarna, genom att ha samma stylesheet hade alla sidor haft samma design. När det kommer till prestanda och hastighet på sidan ska det inte vara något problem förutom när du precis kommer in i videogalleriet eftersom du måste ladda in en massa olika youtube videos vilket i vissa fall kan vara krävande och långsamt. Jag la in lazy loading  i iframe taggarna vilket gör att videorna som inte syns inte laddas in, detta gör så att telefoner som inte har samma prestanda som datorer kan ladda in en bild i taget. Sidan är gjord på ett sätt där det skulle vara ganska svårt att föra in flera sidor om man skulle vilja skriva om tillexempel astroidbältet.
@@ -34,7 +45,7 @@ När det kommer till designen av sidan skulle jag kunnat förbättra en hel del 
 Jag har tagit insperation från sidor som [Apple](https://www.apple.com/se/), [Nasa](https://www.nasa.gov/), [Blizzard](https://eu.shop.battle.net/en-gb) och [Samsungs](https://www.samsung.com/se/) hemsidor då jag tycket att de är gjorda och konstruerade på ett snyggt och effektivt sätt då vem som hällst utan problem kan navigera sig genom sidorna, även fast de har olika designer.
 
 ## Tagen kod
-Både meny ikonen och bilspelet är tagen från [W3schools](https://www.w3schools.com/) och slidern gjorde vi i skolan me hjälp från läraren. Men vilka risker finns det när man använder någon annans kod. Det kan finnas stora risker när du avnänder okänd kod om du inte vet vad som händer, detta kan vara allt från små grejer till saker som kan vara skadlig för de som använder sidans information eller utrustning, 
+Både meny ikonen och bilspelet är tagen från [W3schools](https://www.w3schools.com/) och slidern gjorde vi i skolan me hjälp från läraren. Men vilka risker finns det när man använder någon annans kod. Det kan finnas stora risker när du avnänder okänd kod om du inte vet vad som händer, detta kan vara allt från små grejer till saker som kan vara skadlig för de som använder sidans information eller utrustning. W3schools är en trovärdig hemsida och jag hittade ingen farlig javascript på de guider jag följde.
 
 ### [Meny ikon](https://www.w3schools.com/howto/howto_css_menu_icon.asp)
 ```html
@@ -232,5 +243,94 @@ function showSlides(n) {
 ```
 
 ### Slider
+Slider var gjord som en uppgift i skolan och använder ingen farlig javascript
+```html
+<nav class="valkatalog" id="nav">
+    <div class="toggle" onclick="myFunction(this)" id="x">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <!-- Länkar till alla andra planeter -->
+    <ul class="links">
+        <li class="planetlist">
+            <a class="planet" href="merkurius.html">Merkurius</a>
+        </li>
+        <li class="planetlist">
+            <a class="planet" href="venus.html">Venus</a>
+        </li>
+        <li class="planetlist">
+            <a class="planet" href="jorden.html">Jorden</a>
+        </li>
+        <li class="planetlist">
+            <a class="planet" href="mars.html">Mars</a>
+        </li>
+        <li class="planetlist">
+            <a class="planet" href="jupiter.html">Jupiter</a>
+        </li>
+        <li class="planetlist">
+            <a class="planet" href="saturnus.html">Saturnus</a>
+        </li>
+        <li class="planetlist">
+            <a class="planet" href="uranus.html">Uranus</a>
+        </li>
+        <li class="planetlist">
+            <a class="planet" href="neptunus.html">Neptunus</a>
+        </li>
+    </ul>           
+</nav>
+```
+
+```css
+/* Valkatalog som en slidevar*/
+.valkatalog{
+    background-color: var(--colorblack);
+    width: 200px;
+    height: 100%;
+    position: relative;
+
+    position: fixed;
+    right: -200px;
+    top: 0;
+    transition: .3s ease-in-out;
+    display: grid;
+}
+
+/* Slider */
+.toggle{
+    color: var(--colorwhite);
+    display: inline-block;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 20px;
+    right: 100%;
+    margin-right: 60px;
+}
+
+.open{
+    right: 0;
+}
+```
+
+```js
+'use strict'
+/*  */
+let van = document.getElementById('nav')
+let x = document.getElementById('x')
+
+//console.log(nav, x);
+
+x.addEventListener('click', function(){
+    nav.classList.toggle('open')
+})
+
+document.addEventListener('keydown', function(event){
+    if(event.key === "Escape" && nav.classList.contains('open')){
+        nav.classList.toggle('open')
+    }
+})
+```
+
 
 
