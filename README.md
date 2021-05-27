@@ -34,7 +34,7 @@ När det kommer till designen av sidan skulle jag kunnat förbättra en hel del 
 Jag har tagit insperation från sidor som [Apple](https://www.apple.com/se/), [Nasa](https://www.nasa.gov/), [Blizzard](https://eu.shop.battle.net/en-gb) och [Samsungs](https://www.samsung.com/se/) hemsidor då jag tycket att de är gjorda och konstruerade på ett snyggt och effektivt sätt då vem som hällst utan problem kan navigera sig genom sidorna, även fast de har olika designer.
 
 ## Tagen kod
-Både meny ikonen och bilspelet är tagen från [W3schools](https://www.w3schools.com/) och slidern gjorde vi i skolan me hjälp från läraren. Men vilka risker finns det när man använder någon annans kod. Det kan finnas stora risker när du avnänder okänd kod om du inte vet vad som händer, detta kan vara allt från små grejer till saker som kan påverka använder av sidan och derar information eller utrustning, 
+Både meny ikonen och bilspelet är tagen från [W3schools](https://www.w3schools.com/) och slidern gjorde vi i skolan me hjälp från läraren. Men vilka risker finns det när man använder någon annans kod. Det kan finnas stora risker när du avnänder okänd kod om du inte vet vad som händer, detta kan vara allt från små grejer till saker som kan vara skadlig för de som använder sidans information eller utrustning, 
 
 ### [Meny ikon](https://www.w3schools.com/howto/howto_css_menu_icon.asp)
 ```html
