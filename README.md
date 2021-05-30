@@ -14,26 +14,33 @@ Datum: 24 Maj 2021
 
 ## Support
 
-**Notera**: "Support" är ingen garanti och kan bero på olika verisioner, men de versioner som är nämda här är testade och ska fungerar som planerat.
+**Notera**: "Support" är ingen garanti och kan bero på olika verisioner av ditt operativ och de som är nämda är testade på MacOS Catalina och Big Sur, Windows och Android. Sidan är testad för standadiserade upplösningar och fungerar bra på 4k, 2k, 1080p, 720p och på de popolöraste telefonerna.
 
 | Safari | Chrome | Firefox | Microsoft Edge | Opera | Samsung internet |
 |--------|--------|---------|----------------|-------|------------------|
 | 14     | 90     | 88      | 90             | 76    | 14.0.3.5         |
 | 13.1   | 89     | 87      | 89             | 75    |                  |
 
+## Förbättnignar
+En stor förbättring som jag skulle kunna göra är att använda mig av ett stylesheet och sotera filträdet på ett bättre sätt. Att använda ett Stylesheet gör det enklare att underhålla sidan då allt finns på samma plats. Bättre prestanda för videogalleriet och mer ordning när det kommer till html taggarna, genom att ha samma stylesheet hade alla sidor haft samma design. När det kommer till prestanda och hastighet på sidan ska det inte vara något problem förutom när du precis kommer in i videogalleriet eftersom du måste ladda in en massa olika youtube videos vilket i vissa fall kan vara krävande och långsamt. Jag la in lazy loading  i iframe taggarna vilket gör att videorna som inte syns inte laddas in, detta gör så att telefoner som inte har samma prestanda som datorer kan ladda in en bild i taget. Sidan är gjord på ett sätt där det skulle vara ganska svårt att föra in flera sidor om man skulle vilja skriva om tillexempel astroidbältet.
 
-## Upphovsrätt och lagar
-Sidan använder bilder och ikoner som är utgivnga gratis och inte har något upphovsrättsskyddat då bildarna jag använt är tagna från [Nasa](https://www.nasa.gov/) eller hemsidor som har publicerat bilder som är tillåtna att använda för privat bruk då upphovsmannen har tillåtit det. Något som jag skulle vilja göra är att varje bild ska ha en länk som leder dit jag hämtade bilden ifrån, detta hade gjort det enklare för använderen av hemsidan att hitta bilderna om personen skulle vara intresserad att använda de själva.
+### Design
+När det kommer till designen av sidan skulle jag kunnat förbättra en hel del då jag stötte en hel del problem när det gäller bilder och hur jag valde att lägga upp sidan. Den ändringen jag skulle vilja göra i efterhand är att få sidan enklare att navigera då navbaren på hemsidan är lite klurig eftersom den förändras beroende på vilken sida du är på bara från navbaren. För att göra det enklare för användaren skulle jag jort så att navbaren var en under headern. Detta hade gjort det enklare att föra in och komma på nya ideer och en enklare sida att förså och navigera, sedan modularitet är något som hade varit ett större problem.
+
+### Insperation
+Jag har tagit insperation från sidor som [Apple](https://www.apple.com/se/), [Nasa](https://www.nasa.gov/), [Blizzard](https://eu.shop.battle.net/en-gb) och [Samsungs](https://www.samsung.com/se/) hemsidor då jag tycket att de är gjorda och konstruerade på ett snyggt och effektivt sätt då vem som hällst utan problem kan navigera sig genom sidorna, även fast de har olika designer.
 
 ## Webbhotell
+Ett webhotell är den plats du väljer att ladda upp och publicera din hemsida. Beroende på vilket webbhotell du väljer får tillgång till en mängd olika fuktioner och utrymme, detta gör det väldigt viktigt att veta vad du vill ha från ett webbhotell innan du väljder din plan.
 
+### [Github](https://github.com/)
+Github är ett dotterföretag av Microsoft och blev uppköpt den 4 Juni 2018 för 7.5 miljarder amerikanska dollar. En fördel med att använda GitHub som ett webbhotell är att det är en gratis tjänst och hosting genom github pages. En nackdel med github är att du behöver göra sidan själv och därmed behöver kunskap inom html och css åtminståne. Detta gör att det inte skulle vara aktuellt för någon som inte har någon förkunskap inom detta område och bara vill ha en hemsida. 
 
-### Github
-En fördel med att använda GitHub som ett webbhotell är att det är en gratis tjänst och hosting genom github pages. En nackdel med github är att du behöver göra sidan själv och därmed behöver kunskap inom html och css åtminståne. Detta gör att det inte skulle vara aktuellt för någon som inte har någon förkunskap inom detta område och bara vill ha en hemsida. 
+### [Loopia](https://www.loopia.se/)
+Loopia erbjuder tre olika planer när det kommer till deras webbhottelpaket, där du får en väldigt flexibel hosting där du kan kan välja om du vill hosta genom unix eller windows. Loopia erbjuder en sitebuilder som kan vara väldigt användbar om du inte har någon erfarenhet med html, css och javascript. Loopia har en del olika supportalternativ de erbjuder samtal, chatt, epost men även lösningar på vanliga frågor genom deras hemsida. Vilket gör att loopia är ett bra alternativ för både erfarna och nybörjare när det gäller webbutveckling.
 
-### Loopia
-
-### Miss hosting
+### [Miss hosting](https://misshosting.se/)
+Misshostring är väldigt likt loopia när det kommer till hosting och olika erbjudande, men det som skiljer Loopia och Misshosting är hur din server blir speccad och hur många hemisdor du kan ha. Miss hosting erbjuder en gratis sitebuilder och obegränsad trafik. När det gäller suport kan det vara bättre då Misshosting bara har försvarade frågor och en chatt och ingen direkt telefonsupport.
 
 ## Förbättnignar
 En stor förbättring som jag skulle kunna göra är att använda mig av ett stylesheet och sotera filträdet på ett bättre sätt. Att använda ett Stylesheet gör det enklare att underhålla sidan då allt finns på samma plats. Bättre prestanda för videogalleriet och mer ordning när det kommer till html taggarna, genom att ha samma stylesheet hade alla sidor haft samma design. När det kommer till prestanda och hastighet på sidan ska det inte vara något problem förutom när du precis kommer in i videogalleriet eftersom du måste ladda in en massa olika youtube videos vilket i vissa fall kan vara krävande och långsamt. Jag la in lazy loading  i iframe taggarna vilket gör att videorna som inte syns inte laddas in, detta gör så att telefoner som inte har samma prestanda som datorer kan ladda in en bild i taget. Sidan är gjord på ett sätt där det skulle vara ganska svårt att föra in flera sidor om man skulle vilja skriva om tillexempel astroidbältet.
@@ -41,11 +48,16 @@ En stor förbättring som jag skulle kunna göra är att använda mig av ett sty
 ### Design
 När det kommer till designen av sidan skulle jag kunnat förbättra en hel del då jag stötte en hel del problem när det gäller bilder och hur jag valde att lägga upp sidan. Den ändringen jag skulle vilja göra i efterhand är att få sidan enklare att navigera då navbaren på hemsidan är lite klurig eftersom den förändras beroende på vilken sida du är på bara från navbaren. För att göra det enklare för användaren skulle jag jort så att navbaren var en under headern. Detta hade gjort det enklare att föra in och komma på nya ideer och en enklare sida att förså och navigera, sedan modularitet är något som hade varit ett större problem då det inte finns något plats i headern att lägga till nya saker på ett snyggt och smidigt sätt.
 
-### Insperation
-Jag har tagit insperation från sidor som [Apple](https://www.apple.com/se/), [Nasa](https://www.nasa.gov/), [Blizzard](https://eu.shop.battle.net/en-gb) och [Samsungs](https://www.samsung.com/se/) hemsidor då jag tycket att de är gjorda och konstruerade på ett snyggt och effektivt sätt då vem som hällst utan problem kan navigera sig genom sidorna, även fast de har olika designer.
+## Tekenkod
+Teckenkod uppstod först när datorer behövde kommunicera men varande och en av de första standerna var ASCII(American Standard Code for Information Interchange) Och den amrikanska verisionen är idag standardiserad som ISO 646. ASCII använder en 7-bitars kod som kan representera 128 olika tecken och räcker till den engelska alfabetet för stora och små bokstäver. Det finns ett flertal landspecifika ASCII-kodninger men problemet men problemet med ASCII-kodning är att det inte fungerar bra för intertationell kommunikation. Där teckenkod är den nyckel som knyter kodpunkter till bytes i datorns minne som sedan avbilda bytes tillbaka till kodpunkter.
 
-## Tagen kod
-Både meny ikonen och bilspelet är tagen från [W3schools](https://www.w3schools.com/) och slidern gjorde vi i skolan me hjälp från läraren. Men vilka risker finns det när man använder någon annans kod. Det kan finnas stora risker när du avnänder okänd kod om du inte vet vad som händer, detta kan vara allt från små grejer till saker som kan vara skadlig för de som använder sidans information eller utrustning. W3schools är en trovärdig hemsida och jag hittade ingen farlig javascript på de guider jag följde.
+När man vill läsa information från olika språk så måste man byta variant till ISO 8859 där teckenkodnignen måste fginnas i programmet som ska lsa dokukemtet vilket ofta kan leda till att fel tecken kan visas. Detta gjorde att ett ett projekt vid namnet Unicode startades med målet att standadiserad. För att göra Unicode effektiv reslulterade der i olika varianter av UTF som kallas UTF-8, UTF-16, UTF32 där UTF-8 är den vanligaste och den jag använde när jag gjorde min hemsida.
+
+### UTF-8
+UTF-8 är en åtta-bitars Unicode transformationsformat som är en längdvarierande teckenkodning som använda för att representera texts som är kodad i Unicode som en sekvens av byte. UTF-8 har valts som den huvudsakliga teckenkodningen i internetprotokoll där nya protokoll måste ge stöd till denna teckenkodning om det inte är av speciella skäl är olämplig. UTF-8 gör så att text visas på samma sätt oavsätt vilken platform du befinner dig på. Detta gör så att bokstäver som åäö kommer visas för alla på samma sätt även fast du befinner dig på en plats eller en dator som avnänder sig av bokstäverna.
+
+## Lånad/tagen kod
+Både meny ikonen och bilspelet är tagen från [W3schools](https://www.w3schools.com/) och slidern gjorde vi i skolan me hjälp från läraren. Men vilka risker finns det när man använder någon annans kod. Det kan finnas stora risker när du avnänder okänd kod om du inte vet vad som händer, detta kan vara allt från små grejer till saker som kan vara skadlig för de som använder sidans information eller utrustning. W3schools är en trovärdig hemsida och jag hittade ingen farlig javascript på de guider jag följde. Det finns dock koprimerad javascript som är näst intill omöjligt för en männsika att läsa vilket kan innehålla farlig javarcipt.
 
 ### [Meny ikon](https://www.w3schools.com/howto/howto_css_menu_icon.asp)
 ```html
@@ -242,8 +254,8 @@ function showSlides(n) {
 }
 ```
 
-### Slider
-Slider var gjord som en uppgift i skolan och använder ingen farlig javascript
+### Valkatalog
+Valkatalogen är ändrad kod från en uppgift vi gjorde i skolan och innehåller ingen farlig javascript.
 ```html
 <nav class="valkatalog" id="nav">
     <div class="toggle" onclick="myFunction(this)" id="x">
@@ -331,6 +343,17 @@ document.addEventListener('keydown', function(event){
     }
 })
 ```
+
+## Använt matrial och Upphovsrätten
+Detta är något som är väldigt viktigt att tänka på när det gälle offentiliga sidor eftersom det kan vara stora konsikvenser.
+
+### Upphovsrätten
+Upphovsrätten är en samling av lagar och regleringar kring verk och hur de får användas. Den som vill använda ett skyddat verk behöver tillstånd vilket akrivmyndigheten inte kan utfärda för upphovsmannans räkning. Istället ska användaren vända sig direkt till upphovsmannens eller upphovsrättorganisationen. Om upphovsmannen är okänd eller inte har några kända arvingar kan det vara extremt svårt att få tillstånd att använda värket. Och det är upp till användaren att överväga hur mycket efterforskning han ska göra. Om upphovsmannen har varit död i mer än 70 år har upphovsrätten upphört, dock ska namn alltid sättas ut i anslutning till verket.
+
+### Använt matrial
+Matrialet som är använt på hemsidan kommer främst från sidor som get ut bilder och ikoner för gratis användning. När det kommer till andra bilder så är de från Nasa som tillåter användning av deras bilder. Jag skulle dock vilja att bilderna skulle länka till platsen för att besökare på hemsidan också skulle kunna använda bilderna.
+
+
 
 
 
