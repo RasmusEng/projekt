@@ -57,7 +57,7 @@ När man vill läsa information från olika språk så måste man byta variant t
 UTF-8 är en åtta-bitars Unicode transformationsformat som är en längdvarierande teckenkodning som använda för att representera texts som är kodad i Unicode som en sekvens av byte. UTF-8 har valts som den huvudsakliga teckenkodningen i internetprotokoll där nya protokoll måste ge stöd till denna teckenkodning om det inte är av speciella skäl är olämplig. UTF-8 gör så att text visas på samma sätt oavsätt vilken platform du befinner dig på. Detta gör så att bokstäver som åäö kommer visas för alla på samma sätt även fast du befinner dig på en plats eller en dator som avnänder sig av bokstäverna.
 
 ## Lånad/tagen kod
-Både meny ikonen och bilspelet är tagen från [W3schools](https://www.w3schools.com/) och slidern gjorde vi i skolan me hjälp från läraren. Men vilka risker finns det när man använder någon annans kod. Det kan finnas stora risker när du avnänder okänd kod om du inte vet vad som händer, detta kan vara allt från små grejer till saker som kan vara skadlig för de som använder sidans information eller utrustning. W3schools är en trovärdig hemsida och jag hittade ingen farlig javascript på de guider jag följde. Det finns dock koprimerad javascript som är näst intill omöjligt för en männsika att läsa vilket kan innehålla farlig javarcipt.
+Både meny ikonen och bilspelet är tagen från [W3schools](https://www.w3schools.com/) och slidern gjorde vi i skolan me hjälp från läraren. Men vilka risker finns det när man använder någon annans kod. Det kan finnas stora risker när du avnänder okänd kod om du inte vet vad som händer, detta kan vara allt från små grejer till saker som kan vara skadlig för de som använder sidans information eller utrustning. W3schools är en trovärdig hemsida och jag hittade ingen farlig javascript på de guider jag följde. Det finns dock koprimerad javascript som är näst intill omöjligt för en männsika att läsa vilket kan innehålla farlig javarcipt. Om du inte är säker om koden är skadlig borde en annan lösnings sökas och koden borde inte användas.
 
 ### [Meny ikon](https://www.w3schools.com/howto/howto_css_menu_icon.asp)
 ```html
@@ -351,7 +351,19 @@ Detta är något som är väldigt viktigt att tänka på när det gälle offenti
 Upphovsrätten är en samling av lagar och regleringar kring verk och hur de får användas. Den som vill använda ett skyddat verk behöver tillstånd vilket akrivmyndigheten inte kan utfärda för upphovsmannans räkning. Istället ska användaren vända sig direkt till upphovsmannens eller upphovsrättorganisationen. Om upphovsmannen är okänd eller inte har några kända arvingar kan det vara extremt svårt att få tillstånd att använda värket. Och det är upp till användaren att överväga hur mycket efterforskning han ska göra. Om upphovsmannen har varit död i mer än 70 år har upphovsrätten upphört, dock ska namn alltid sättas ut i anslutning till verket.
 
 ### Använt matrial
-Matrialet som är använt på hemsidan kommer främst från sidor som get ut bilder och ikoner för gratis användning. När det kommer till andra bilder så är de från Nasa som tillåter användning av deras bilder. Jag skulle dock vilja att bilderna skulle länka till platsen för att besökare på hemsidan också skulle kunna använda bilderna.
+Matrialet som är använt på hemsidan kommer främst från sidor som get ut bilder och ikoner för gratis användning. När det kommer till andra bilder så är de från [Nasa](https://www.nasa.gov/) som tillåter användning av deras bilder. Jag skulle dock vilja att bilderna skulle länka till platsen för att besökare på hemsidan också skulle kunna använda bilderna.
+
+## Etik och Intigritet
+Etik och intigritet är en väldigt viktig del på internet. Intrigitet är väldigt viktigt eftersom att avnänderen av din sida ska känna sig säker och inte vara orolik att privat information ska läckas genom sidan. Man behöver tänka på att internettjänster inte glömmer bort saker vi har tilldelat den vilket gör att många företag och hemsidor använder detta för att ge dig riktad reklam. Det är en stor anledning till varför det är viktigt att veta vilka tjänster du använder dig av och vilken data de använder.
+
+När det kommer till min sida finns det ingen form för mig att spara den information som användaren anger på sidan. Men när det gäller andra tjänster så finns det stora problem med just detta, facebook är ett bra exempel på hur användares information används för att ge dig reklam och underhållning som du själv tycker är underhållande. Ett företag vid namnet [Signal](https://signal.org/blog/) började skicka ut annoser på [Instagram](https://www.instagram.com/) som var väldigt specifika till just användaren som fick dem. Istället för att ge ut reklam om detas hemsida så valde de att visa vad instagram vet om användaren och visa de direkt.
+
+## Sammanfattninig
+Jag tycker slutprodukten av min sida blev helt okej men som med andra projekt hittar man alltid småporblem och fixar som att footern och om sidan har samma css fast två olika css filer och själva filstrukturen och hur det blev konstigt att ha planeterna i en egen mapp. Dock är jag nöjd atrt sidan fungherar i alla populära upplösningar och hur navbaren fungerade på ett bra och smidigt sätt även på mobiltelefoner.
+
+Ett stort problem var skillndaden på vissa sidor och prestandan på videogalleriet även fast jag använda lazy load som gör att bara de videor som syns laddas in. Men skulle gjort videorna var större så att antalet videor inte var så många. Försökte också få in alla javascript i en fil men det blev problem och fick det inte att fungera.
+
+Sidan fungerar dock som den ska på de senaste verisionerna av de testade webbläsarna, dock hade jag lite problem med några år gammla chrome versioner samt internet explorer. Och tycker att resultatet inte blev helt allt för dåligt.
 
 
 
